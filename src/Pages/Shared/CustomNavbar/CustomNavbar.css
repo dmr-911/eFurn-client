@@ -16,15 +16,15 @@
 	height: 1.5em;
 }
 
-.links a {
-	/* color: var(--heading-color);
+/* .links a {
+	color: var(--heading-color);
 	min-width: 80px;
 	min-height: 44px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: center; */
-}
+	justify-content: center;
+} */
 
 .links a:focus,
 .links a:hover {
