@@ -1,0 +1,164 @@
+
+[
+    {
+        "key": "0001",
+        "category": "furniture",
+        "name": "White leather sofa",
+        "stock": 23,
+        "star": 4.3,
+        "img": "https://i.ibb.co/hWpGdZ2/White-leather-sofa.webp",
+        "price": 525,
+        "shipping": 19.99
+    },
+    {
+        "key": "0002",
+        "category": "furniture",
+        "name": "Yellow-chair",
+        "stock": 188,
+        "star": 4.1,
+        "img": "https://i.ibb.co/frV0sZg/Yellow-chair.webp",
+        "price": 199,
+        "shipping": 8.99
+    },
+    {
+        "key": "0003",
+        "category": "bag",
+        "name": "Bag",
+        "stock": 488,
+        "star": 3.8,
+        "img": "https://i.ibb.co/PCjLGXX/Bag.jpg",
+        "price": 99,
+        "shipping": 5.99
+    },
+    {
+        "key": "0004",
+        "category": "furniture",
+        "name": "Comfort chair(Black)",
+        "stock": 148,
+        "star": 4.6,
+        "img": "https://i.ibb.co/xHtSNfp/Black-comfort-chair.webp",
+        "price": 149,
+        "shipping": 7.99
+    },
+    {
+        "key": "0005",
+        "category": "accessories",
+        "name": "Black kately",
+        "stock": 215,
+        "star": 3.9,
+        "img": "https://i.ibb.co/7NXCm67/black-kately.webp",
+        "price": 129,
+        "shipping": 7.99
+    },
+    {
+        "key": "0006",
+        "category": "furniture",
+        "name": "Blue sofa",
+        "stock": 235,
+        "star": 4.7,
+        "img": "https://i.ibb.co/WkjhX3t/Blue-sofa.webp",
+        "price": 300,
+        "shipping": 14.99
+    },
+    {
+        "key": "0007",
+        "category": "accessories",
+        "name": "Elephant shape cloth box",
+        "stock": 188,
+        "star": 4.4,
+        "img": "https://i.ibb.co/fFpnLjf/Elephant-shape-accessories.webp",
+        "price": 155,
+        "shipping": 8.99
+    },
+    {
+        "key": "0008",
+        "category": "accessories",
+        "name": "Flower tube",
+        "stock": 18,
+        "star": 3.9,
+        "img": "https://i.ibb.co/jV88tfJ/Flower-tube.webp",
+        "price": 99,
+        "shipping": 7.99
+    },
+    {
+        "key": "0009",
+        "category": "glass",
+        "name": "Green sun glass",
+        "stock": 88,
+        "star": 4.5,
+        "img": "https://i.ibb.co/kmMkcpQ/Green-glass.webp",
+        "price": 39,
+        "shipping": 3.99
+    },
+    {
+        "key": "0010",
+        "category": "furniture",
+        "name": "Modern table",
+        "stock": 88,
+        "star": 4.3,
+        "img": "https://i.ibb.co/XYz8sLz/Modern-table.webp",
+        "price": 123,
+        "shipping": 8.99
+    },
+    {
+        "key": "0011",
+        "category": "furniture",
+        "name": "Chair(orrange)",
+        "stock": 111,
+        "star": 4.0,
+        "img": "https://i.ibb.co/Pt8cVXP/orrange-chair.webp",
+        "price": 99,
+        "shipping": 7.99
+    },
+    {
+        "key": "0012",
+        "category": "accessories",
+        "name": "Pencil box",
+        "stock": 688,
+        "star": 4.1,
+        "img": "https://i.ibb.co/GVPQ288/Pencil-box.webp",
+        "price": 44,
+        "shipping": 4.99
+    },
+    {
+        "key": "0013",
+        "category": "accessories",
+        "name": "Popcorn maker",
+        "stock": 188,
+        "star": 4.2,
+        "img": "https://i.ibb.co/6Pcz0hn/Popcorn-maker.webp",
+        "price": 399,
+        "shipping": 8.99
+    },
+    {
+        "key": "0014",
+        "category": "furniture",
+        "name": "Table(black)",
+        "stock": 188,
+        "star": 4.6,
+        "img": "https://i.ibb.co/rvgYRps/product-5.webp",
+        "price": 199,
+        "shipping": 10.99
+    },
+    {
+        "key": "0015",
+        "category": "furniture",
+        "name": "Sofa (1 seat)",
+        "stock": 114,
+        "star": 4.9,
+        "img": "https://i.ibb.co/C272Q4J/Single-seat-sofa.webp",
+        "price": 199,
+        "shipping": 10.99
+    },
+    {
+        "key": "0016",
+        "category": "furniture",
+        "name": "Chair(white)",
+        "stock": 18,
+        "star": 4.2,
+        "img": "https://i.ibb.co/QvLZTs7/White-chair.webp",
+        "price": 169,
+        "shipping": 9.99
+    }
+
+]
