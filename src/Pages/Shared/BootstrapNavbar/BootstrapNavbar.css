@@ -1,0 +1,4 @@
+.nav-link:focus, .nav-link:active{
+    background-color: rgb(37, 95, 134)!important;
+    color: white!important;
+}
