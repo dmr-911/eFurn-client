@@ -5,6 +5,7 @@ import Home from './Pages/Home/Home/Home';
 import CustomNavbar from './Pages/Shared/CustomNavbar/CustomNavbar';
 import BootstrapNavbar from './Pages/Shared/BootstrapNavbar/BootstrapNavbar';
 import NotFound from './Pages/NotFound/NotFound';
+import LogIn from './Pages/Account/LogIn/LogIn';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="" element={<Home></Home>}></Route>
           <Route path="home" element={<Home></Home>}></Route>
+          <Route path="login" element={<LogIn></LogIn>}></Route>
           <Route path="*" element={<NotFound></NotFound>}></Route>
         </Routes>
       </Router>

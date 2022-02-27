@@ -28,7 +28,7 @@ const BootstrapNavbar = () => {
             <Nav                
                 className="ms-auto my-2 my-lg-0 d-flex align-items-center justify-content-center"
             >
-                <Nav.Link><b className="mx-2">{user}</b></Nav.Link>
+                <Nav.Link as={Link} to="login"><b className="mx-2">{user}</b></Nav.Link>
                 <Nav.Link><b className="mx-2">{heart}</b></Nav.Link>
                 <Nav.Link><b className="mx-2">{cart}</b></Nav.Link>
                 <Form className="d-flex">
