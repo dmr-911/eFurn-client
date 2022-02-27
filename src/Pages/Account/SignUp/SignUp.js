@@ -29,7 +29,7 @@ const SignUp = () => {
     };
 
     return (
-    <Container className="mt-5 mb-2">
+    <Container className="mt-3 mb-2">
     <div className="login-form-container border border-1">
     <div className="page-title text-center">
         Create an account

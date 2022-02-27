@@ -41,7 +41,7 @@ const LogIn = () => {
 
 
     return (
-      <Container className="my-5">
+      <Container className="my-3">
         
       <div className="login-form-container border border-1">
           <div className="page-title text-center">
