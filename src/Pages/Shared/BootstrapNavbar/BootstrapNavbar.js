@@ -12,7 +12,7 @@ const BootstrapNavbar = () => {
     return (
         <Navbar bg="light" expand="lg">
         <Container fluid>
-            <Navbar.Brand href="#">Efurn</Navbar.Brand>
+            <Navbar.Brand as={Link} to="/">Efurn</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
             <Nav
