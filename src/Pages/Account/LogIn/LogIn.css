@@ -21,7 +21,7 @@
 .login-form-container{
     max-width: 445px;
     border-radius: 10px;
-    box-shadow: 0 0 5px rgb(0, 0, 0);
+    box-shadow: 0 0 1px rgb(0, 0, 0);
     background: #fff;
     margin: auto;
     padding: 0 50px 45px;

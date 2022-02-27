@@ -47,9 +47,7 @@ const LogIn = () => {
           <div className="page-title text-center">
               Login page
           </div>
-          <p>Login using social network</p>
-          <GoogleButton className="mx-auto mb-4" onClick={handleGoogleSignIn}/>
-          <p>Or insert your account information : </p>
+          <b className="d-block my-2">Insert your account information : </b>
           <form  onSubmit={handleSubmit} className="mb-3">
           <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Control
@@ -73,11 +71,13 @@ const LogIn = () => {
           <Button className="login-register-btn" variant="primary" type="submit">
               Login
           </Button>
+          <b className="d-block my-2">Or Login using social network</b>
+          <GoogleButton className="mx-auto mb-4" onClick={handleGoogleSignIn}/>
           </form>
                 {/* {error && <small className="text-danger">{error}</small>} */}
               <p className="fw-bold">
                New to our site ? Please create an account{" "}
-               <Link to="/register">Signup</Link>
+               <Link to="/signUp">Signup</Link>
              </p>
       </div>
   </Container>
