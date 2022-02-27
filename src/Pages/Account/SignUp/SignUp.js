@@ -29,7 +29,7 @@ const SignUp = () => {
     };
 
     return (
-    <Container className="my-5">
+    <Container className="mt-5 mb-2">
     <div className="login-form-container border border-1">
     <div className="page-title text-center">
         Create an account
@@ -86,7 +86,7 @@ const SignUp = () => {
                <Link to="/login">Login</Link>
              </p>
     <p className="mt-3"><b>Join us using social network</b></p>
-    <GoogleButton className="mx-auto mb-4" />
+    <GoogleButton className="mx-auto" />
     </div>
     </Container>
     );
