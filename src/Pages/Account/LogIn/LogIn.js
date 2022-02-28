@@ -27,7 +27,7 @@ const LogIn = () => {
     //   googleSignIn(location, navigate);
       googleSignIn()
       .then((result) => {
-        navigate(location);
+        navigate(destination);
     }).catch((error) => {
       setError(error.message);
     });

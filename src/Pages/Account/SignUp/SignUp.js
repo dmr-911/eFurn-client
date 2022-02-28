@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './SignUp.css';
 import GoogleButton from 'react-google-button';
-// import useAuth from '../../../hooks/useAuth';
+import useAuth from '../../../hooks/useAuth';
 
 const SignUp = () => {
-//   const {isLoading, error, registerUser, setError} = useAuth();
-//   setError('');
+  const {signUp, googleSignIn, setError} = useAuth();
+  setError('');
   
   const [registerData, setRegisterData] = useState({});
-  const navigation = useNavigate();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const destination = location?.state?.from || '/';
     
   const handleOnBlur = (e) => {
     const field = e.target.name;
@@ -25,8 +27,17 @@ const SignUp = () => {
       if(registerData.password !== registerData.password2){
         return
       }
-    //   registerUser(registerData.email, registerData.password, registerData.name, navigation)
+      signUp(registerData.email, registerData.password, registerData.name, navigate)
     };
+
+    const handleGoogleSignIn = () =>{
+      googleSignIn()
+      .then((result) => {
+        navigate(destination);
+    }).catch((error) => {
+      setError(error.message);
+    });
+    }
 
     return (
     <Container className="mt-3 mb-2">
@@ -86,7 +97,7 @@ const SignUp = () => {
                <Link to="/login">Login</Link>
              </p>
     <p className="mt-3"><b>Join us using social network</b></p>
-    <GoogleButton className="mx-auto" />
+    <GoogleButton onClick={handleGoogleSignIn} className="mx-auto" />
     </div>
     </Container>
     );
