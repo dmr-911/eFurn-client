@@ -1,0 +1,25 @@
+.banner{
+    background-image: linear-gradient(rgba(82, 173, 226, 0.5), rgba(0,0,0,0.5)), url('../../../images/banner/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.line{
+    height: 3px;
+    width: 80px;
+    background-color: orangered;
+}
+.btn-banner{
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 5px 14px;
+    margin: 10px 0;
+}
+.btn-banner:hover{
+    background-color: rgb(241, 102, 52);
+    /* color: black; */
+    transition: all 1.2s;
+}

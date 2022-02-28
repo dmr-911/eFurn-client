@@ -44,10 +44,6 @@ const LogIn = () => {
       });
     }
 
-    console.log(user);
-
-
-
     return (
       <Container className="my-3">
         
