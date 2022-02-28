@@ -1,12 +1,16 @@
 .banner{
-    background-image: linear-gradient(rgba(82, 173, 226, 0.5), rgba(0,0,0,0.5)), url('../../../images/banner/bg.jpg');
+    background-image: linear-gradient(rgba(68, 114, 151, 0.5), rgba(0,0,0,0.5)), url('../../../images/banner/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    height: 60vh;
 }
 .line{
     height: 3px;
     width: 80px;
     background-color: orangered;
+}
+.banner-title{
+    height: 102px;
 }
 .btn-banner{
     background-color: transparent;
@@ -17,6 +21,7 @@
     border-radius: 25px;
     padding: 5px 14px;
     margin: 10px 0;
+    cursor: pointer;
 }
 .btn-banner:hover{
     background-color: rgb(241, 102, 52);
