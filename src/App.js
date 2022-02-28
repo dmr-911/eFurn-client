@@ -2,18 +2,18 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Pages/Home/Home/Home';
-import CustomNavbar from './Pages/Shared/CustomNavbar/CustomNavbar';
 import BootstrapNavbar from './Pages/Shared/BootstrapNavbar/BootstrapNavbar';
 import NotFound from './Pages/NotFound/NotFound';
 import LogIn from './Pages/Account/LogIn/LogIn';
 import SignUp from './Pages/Account/SignUp/SignUp';
+import AuthProvider from './context/AuthProvider';
 
 function App() {
   return (
     <div className="App">
+      <AuthProvider>
       <Router>
         <BootstrapNavbar></BootstrapNavbar>
-        {/* <CustomNavbar></CustomNavbar> */}
         <Routes>
           <Route path="" element={<Home></Home>}></Route>
           <Route path="home" element={<Home></Home>}></Route>
@@ -22,6 +22,7 @@ function App() {
           <Route path="*" element={<NotFound></NotFound>}></Route>
         </Routes>
       </Router>
+      </AuthProvider>
     </div>
   );
 }

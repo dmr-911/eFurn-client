@@ -3,11 +3,11 @@ import { Button, Form, Container } from 'react-bootstrap';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import './LogIn.css';
 import GoogleButton from 'react-google-button';
-// import useAuth from '../../../hooks/useAuth';
+import useAuth from '../../../hooks/useAuth';
 
 const LogIn = () => {
-//   const { googleSignIn, emailSignIn, error, setError} = useAuth();
 
+    const {user, login, setError, googleSignIn} = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
   const destination = location?.state?.from || '/';
@@ -25,18 +25,26 @@ const LogIn = () => {
     }
     const handleGoogleSignIn = () =>{
     //   googleSignIn(location, navigate);
+      googleSignIn()
+      .then((result) => {
+        navigate(location);
+    }).catch((error) => {
+      setError(error.message);
+    });
     };
 
     const handleSubmit = (e) =>{
       e.preventDefault();
-    //   emailSignIn(loginDetails.email, loginDetails.password)
-    //   .then(user =>{
-    //     navigate(destination);
-    //   })
-    //   .catch((error) => {
-    //     setError(error.message)
-    //   });
+      login(loginDetails.email, loginDetails.password)
+      .then(user =>{
+        navigate(destination);
+      })
+      .catch((error) => {
+        setError(error.message)
+      });
     }
+
+    console.log(user);
 
 
 
