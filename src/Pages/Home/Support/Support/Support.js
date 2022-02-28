@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import Item from '../Item/Item';
 import './Support.css';
 
@@ -12,13 +12,15 @@ const Support = () => {
     },[]);
     console.log(items);
     return (
-        <Container fluid>
+        <Container fluid className="py-5">
+            <Row xs={1} md={2} lg={4} className="g-3">
             {
                 items.map(item => <Item
                 key={item.key}
                 item={item}
                 ></Item>)
             }
+            </Row>
         </Container>
     );
 };

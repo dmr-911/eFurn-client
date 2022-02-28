@@ -1,0 +1,13 @@
+.support-break{
+    width: 60px;
+    height: 2px;
+    background-color: rgb(87, 69, 69);
+
+}
+.support{
+    transition: all .5s;
+}
+.support:hover{
+    border: 1.3px solid;
+    transform: scale(.9);
+}
