@@ -1,0 +1,26 @@
+[
+    {
+        "key": "001",
+        "name" : "Free Shipping",
+        "img" : "https://i.ibb.co/W28dVR9/car.webp",
+        "description" : "We offer you a free shipping from us. The offer is limited. Shop now!"
+    },
+    {
+        "key": "002",
+        "name" : "Money Return",
+        "img" : "https://i.ibb.co/zbDj5JK/dollar.webp",
+        "description" : "We have a strong money return policy. If any kind of defect found from our services, your money will be returned."
+    },
+    {
+        "key": "003",
+        "name" : "Support 24/7",
+        "img" : "https://i.ibb.co/5j2DHWD/time.webp",
+        "description" : "Our support team is always there to help you."
+    },
+    {
+        "key": "004",
+        "name" : "Order Discount",
+        "img" : "https://i.ibb.co/QYkNwst/discount.webp",
+        "description" : "Get up to 40% discount from our products."
+    }
+]

@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import './Banner.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link, useNavigate } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import { useSpring, animated } from "react-spring";
 
@@ -19,6 +20,11 @@ const Banner = () => {
         ],
         from: { opacity: 0.7, color: "blue" },
       });
+
+      const navigate = useNavigate();
+      const handleShopNow = () =>{
+          navigate('/shop');
+      }
 
     return (
         <Container fluid className="banner">
@@ -44,7 +50,7 @@ const Banner = () => {
                     }}
                     />
                     </h1>
-                    <button className="btn-banner">Shop Now</button>
+                    <button className="btn-banner" onClick={handleShopNow}>Shop Now</button>
                     </div>
                 </Col>
             </Row>
