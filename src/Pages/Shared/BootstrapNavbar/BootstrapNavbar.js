@@ -2,11 +2,12 @@ import React from 'react';
 import { Button, Container, Form, FormControl, Nav, Navbar } from 'react-bootstrap';
 import './BootstrapNavbar.css';
 import { Link } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 
 const BootstrapNavbar = () => {
-    // const user = <FontAwesomeIcon icon={faUser} />
-    // const user = <FontAwesomeIcon icon="fa-regular fa-user" />
-    const user = <i className="fa-regular fa-circle-user"></i>;
+    const {user, logOut} = useAuth();
+
+    const userIcon = <i className="fa-regular fa-circle-user"></i>;
     const heart = <i className="fa-regular fa-heart"></i>;
     const cart = <i className="fa-regular fa-bag-shopping"></i>;
     return (
@@ -28,9 +29,14 @@ const BootstrapNavbar = () => {
             <Nav                
                 className="ms-auto my-2 my-lg-0 d-flex align-items-center justify-content-center"
             >
-                <Nav.Link as={Link} to="login"><b className="mx-2">{user}</b></Nav.Link>
                 <Nav.Link><b className="mx-2">{heart}</b></Nav.Link>
                 <Nav.Link><b className="mx-2">{cart}</b></Nav.Link>
+                {
+                    user.email ?
+                    <button className="btn-danger rounded mx-2" onClick={logOut}>Logout</button>
+                    :
+                    <Nav.Link as={Link} to="login"><b className="mx-2">{userIcon}</b></Nav.Link>
+                }
                 <Form className="d-flex">
                     <FormControl
                     type="search"
