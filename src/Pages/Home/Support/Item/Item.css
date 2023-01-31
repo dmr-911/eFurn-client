@@ -1,13 +1,10 @@
 .support-break{
     width: 60px;
     height: 2px;
-    background-color: rgb(87, 69, 69);
+    background-color: rgb(116, 108, 108);
 
 }
+
 .support{
-    transition: all .5s;
-}
-.support:hover{
-    border: 1.3px solid;
-    transform: scale(.9);
+    transition: all .8s ease-in-out;
 }
